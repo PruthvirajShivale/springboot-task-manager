@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+
+<body class="dashboard-body">
+
+    <div class="dashboard-container">
+
+        <div class="top-bar">
+
+            <h2>
+                Welcome, <span th:text="${username}"></span>!
+            </h2>
+
+            <a href="/logout" class="logout-btn">
+                Logout
+            </a>
+
+        </div>
+
+        <div class="task-form-card">
+
+            <h3>Create New Task</h3>
+
+            <form action="/task/save"
+                  method="post"
+                  enctype="multipart/form-data">
+
+                <label>Task Title:</label><br>
+
+                <input type="text"
+                       name="title"
+                       required><br><br>
+
+                <label>Description:</label><br>
+
+                <textarea name="description"
+                          rows="4"></textarea><br><br>
+
+                <label>Upload File (Optional):</label><br>
+
+                <input type="file" name="file"><br><br>
+
+                <button type="submit">
+                    Add Task
+                </button>
+
+            </form>
+
+        </div>
+
+        <div class="task-table-card">
+
+            <h3>Your Tasks</h3>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Description</th>
+                        <th>Attachment</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr th:each="task : ${tasks}">
+
+                        <td th:text="${task.title}"></td>
+
+                        <td th:text="${task.description}"></td>
+
+                        <td>
+
+                            <span th:if="${task.fileName == null}">
+                                No file
+                            </span>
+
+                            <a th:if="${task.fileName != null}"
+                               th:href="@{/task/download/{id}(id=${task.id})}"
+                               th:text="${task.fileName}">
+                            </a>
+
+                        </td>
+
+                        <td>
+
+                            <a th:href="@{/task/edit/{id}(id=${task.id})}"
+                               class="action-link edit-link">
+                                Edit
+                            </a>
+
+                            |
+
+                            <a th:href="@{/task/delete/{id}(id=${task.id})}"
+                               class="action-link delete-link"
+                               onclick="return confirm('Are you sure?')">
+                                Delete
+                            </a>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
