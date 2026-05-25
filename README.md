@@ -1,26 +1,14 @@
-# Spring Boot Task Manager
+# 🚀 Spring Boot Task Manager
 
-This is my first Spring Boot project created while learning Java backend development.
+A full-stack Task Manager web application built using Spring Boot, MySQL, Thymeleaf, Bootstrap, and XAMPP.
 
-A full-stack Task Manager web application built using Spring Boot, MySQL, Thymeleaf, Bootstrap, and XAMPP. Users can register, login, manage tasks, upload files, and perform CRUD operations through a clean dashboard interface.
+Users can register, login, manage tasks, upload files, and perform CRUD operations through a clean dashboard interface.
 
----
-
-## Features
-
-- User Registration
-- User Login & Logout
-- Dashboard System
-- Add New Tasks
-- Edit Tasks
-- Delete Tasks
-- File Upload Support
-- Task List Display
-- MySQL Database Integration
+This is my first full-stack Spring Boot project created while learning Java backend development and database integration.
 
 ---
 
-## Technologies Used
+## 🛠️ Technologies Used
 
 - Java
 - Spring Boot
@@ -36,79 +24,110 @@ A full-stack Task Manager web application built using Spring Boot, MySQL, Thymel
 
 ---
 
-## 🔄 System Workflow
+## ✨ Features
 
-User registers into the system
-User logs in using credentials
-Dashboard loads user tasks
-User creates new tasks
-User uploads task-related files
-User edits or deletes tasks
-User logs out securely
+- User Registration
+- User Login & Logout
+- Dashboard System
+- Add New Tasks
+- Edit Tasks
+- Delete Tasks
+- File Upload Support
+- Task List Display
+- MySQL Database Integration
 
 ---
 
-## Project Structure
+## 📌 Project Highlights
+
+- Beginner-friendly Spring Boot project
+- Full authentication system
+- File upload functionality
+- CRUD operations implementation
+- Clean dashboard interface
+- MySQL database connectivity
+
+---
+
+## 🔄 System Workflow
+
+- User registers into the system
+- User logs in using credentials
+- Dashboard loads user tasks
+- User creates new tasks
+- User uploads task-related files
+- User edits or deletes tasks
+- User logs out securely
+
+---
+
+## 📂 Project Structure
 
 - Authentication System
-- Dashboard
+- Dashboard Module
 - CRUD Operations
 - File Upload Module
 - Database Connectivity
 
 ---
 
-## Database
+## 🗄️ Database
 
 This project uses MySQL database through XAMPP.
 
----
-
-## How to Run
-
-1. Clone the repository
-
-```bash
-git clone <your-repository-link>
-```
-
-2. Open project in IntelliJ IDEA or VS Code
-
-3. Create MySQL database
+Database Name:
 
 ```sql
 CREATE DATABASE task_manager;
 ```
 
-4. Update database credentials in:
+---
 
-```properties
-application.properties
-```
+## ▶️ How to Run
 
-5. Run the project
+1. Clone the Repository
+git clone <your-repository-link>
 
-6. Open browser:
+2. Open Project
+Open the project in IntelliJ IDEA or VS Code.
 
-```bash
+3. Configure Database
+Update your MySQL username and password in:
+src/main/resources/application.properties
+
+4. Run the Project
+
+For Windows:
+mvnw.cmd spring-boot:run
+
+For Linux/Mac:
+./mvnw spring-boot:run
+
+5. Open Browser
 http://localhost:8080
-```
 
 ---
 
-## Screenshots
+## Screenshots 
 
-### Login Page
-![Login Page](screenshots/Login-page.JPG)
+### Login Page 
 
-### Register Page
-![Register Page](screenshots/Register-page.JPG)
+![Login Page](screenshots/Login-page.JPG) 
 
-### Dashboard
-![Dashboard](screenshots/Dashboard.JPG)
 
-### Edit Task
-![Edit Task](screenshots/edit-task-page.JPG)
+### Register Page 
+
+![Register Page](screenshots/Register-page.JPG) 
+
+
+### Dashboard 
+
+![Dashboard](screenshots/Dashboard.JPG) 
+
+
+### Edit Task 
+![Edit Task](screenshots/edit-task-page.JPG) 
+
 
 ---
 
@@ -120,6 +139,14 @@ http://localhost:8080
 - REST API Version
 - Cloud File Storage
 
-## Author
+---
 
-Pruthviraj Shivale   
+ ## Author 
+ Pruthviraj Shivale
+
+ ---
+
+ ## 📄 License
+This project is created for learning purposes.
+
+---
