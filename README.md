@@ -97,11 +97,11 @@ src/main/resources/application.properties
 
 4. Run the Project
 
-For Windows:
-mvnw.cmd spring-boot:run
+   - For Windows:
+     mvnw.cmd spring-boot:run
 
-For Linux/Mac:
-./mvnw spring-boot:run
+   - For Linux/Mac:
+     ./mvnw spring-boot:run
 
 5. Open Browser
 http://localhost:8080
