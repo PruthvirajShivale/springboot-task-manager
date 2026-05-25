@@ -102,13 +102,13 @@ http://localhost:8080
 ![Login Page](screenshots/Login-page.JPG)
 
 ### Register Page
-![Register Page](screenshots/register-page.png)
+![Register Page](screenshots/Register-page.JPG)
 
 ### Dashboard
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](screenshots/Dashboard.JPG)
 
 ### Edit Task
-![Edit Task](screenshots/edit-task.png)
+![Edit Task](screenshots/edit-task.JPG)
 
 ---
 
