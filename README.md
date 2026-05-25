@@ -108,7 +108,7 @@ http://localhost:8080
 ![Dashboard](screenshots/Dashboard.JPG)
 
 ### Edit Task
-![Edit Task](screenshots/edit-task.JPG)
+![Edit Task](screenshots/edit-task-page.JPG)
 
 ---
 
