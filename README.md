@@ -99,7 +99,7 @@ http://localhost:8080
 ## Screenshots
 
 ### Login Page
-![Login Page](screenshots/login-page.png)
+![Login Page](screenshots/Login-page.JPG)
 
 ### Register Page
 ![Register Page](screenshots/register-page.png)
